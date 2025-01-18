@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Question 1</h1>
+   <table border="black">
+    <caption>Student information</caption>
+        <tr>
+            <th rowspan="6">Info</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Address</th>
+        </tr>
+        <tr>
+            <th>City</th>
+            <th>House</th>
+        </tr>
+    <tr>
+        <td>A</td>
+        <td>Delhi</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>B</td>
+        <td>Mumbai</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td>Kolkata</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>D</td>
+        <td>Pune</td>
+        <td>4</td>
+    </tr>
+   </table> 
+   <h1>Question 2</h1>
+   <form action="">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <br>
+    Sex: 
+    <!-- <input type="radio" name="Sex" id="Male">
+    <label for="Sex">Male</label>
+    <input type="radio" name="Sex" id="Female">
+    <label for="Sex">Female</label> -->
+    <input type="radio" name="Sex" id="Male">
+    <label for="Male">Male</label>
+    <input type="radio" name="Sex" id="Female">
+    <label for="Female">Female</label>
+
+    <br>
+    <br>
+    <label for="Country">Country: </label>
+    <select name="select" id="select">
+        <option value="none">Select an option</option>
+        <option value="ind">India</option>
+        <option value="Aus">Australia</option>
+    </select>
+    <br>
+    <label for="msg"></label>
+    <br>
+    Message:
+    <br>
+    <textarea name="msg" id="msg"></textarea>
+    <br>
+    <br>
+    <input type="checkbox" name="subs" id="subs">
+    <label for="subs">Subscribe?</label>
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+   </form>
+
+   <h1>Question 3</h1>
+   <form action="">
+    <h2>Feedback Form</h2>
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name" required placeholder="Write your name">
+    <br>
+    <br>
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email" required placeholder="Write your email">
+    <br><br>
+    <label for="msg">Message</label>
+    <br>
+    <textarea name="msg" id="msg"></textarea>
+    <br>
+    <br>
+    <br>
+    Rate us our of 5:
+    <br>
+    <input type="radio" id="rate1" name="rating">
+    <label for="rate1">1</label>
+    <br>
+    <input type="radio" id="rate2" name="rating">
+    <label for="rate2">2</label>
+    <br>
+    <input type="radio" id="rate3" name="rating">
+    <label for="rate3">3</label>
+    <br>
+    <input type="radio" id="rate4" name="rating">
+    <label for="rate4">4</label>
+    <br>
+    <input type="radio" id="rate5" name="rating">
+    <label for="rate5">5</label>
+    <br>
+    <br>
+    <button type="submit">Send your message!</button>
+   </form>
+</body>
+</html>

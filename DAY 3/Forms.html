@@ -1,0 +1,64 @@
+<!-- Forms in HTML  -->
+
+<!-- Forms are used to collect user input.
+The HTML <form> element is used to create an HTML form for user input. -->
+<!-- Action attributes -->
+<!-- The action attribute defines the action to be performed when the form is submitted. -->
+<!-- The action attribute is usually a URL pointing to a server-side script where the form data is processed. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+   <h1>Forms in HTML</h1> 
+   <form action="/action">
+        <!-- Input elements -->
+        <!-- The <input> element is the most important form element. -->
+        <!-- The <input> element can be displayed in several ways, depending on the type attribute. -->
+        <!-- The type attribute specifies the type of <input> element to display. -->
+        <input type="text" placeholder="Enter your name">
+        <input type="color" placeholder="Enter your color">
+        <input type="date" placeholder="Enter your date">
+        <input type="email" placeholder="Enter your email">
+        <input type="password" placeholder="Enter your password">
+        <!-- <input type="radio" name="gender" value="male"> -->
+        <!-- labels in html  -->
+        <label>Name:
+            <input type="text">
+        </label>
+        
+        <!-- Classical Approach -->
+        <!-- By using for and id -->
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username">
+        
+        <!-- Button -->
+        <!-- The <button> element is used to create a clickable button. -->
+        <input type="submit" value="Submit">
+        
+        <button type="reset">Hello</button>
+        <button type="submit">Hello</button>
+        <button type="button">Hello</button>
+        <button type="menu">Hello</button>
+
+        <!-- name attribute -->
+        <!-- The name attribute specifies the name of an <input> element. -->
+        <!-- The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted. -->
+        <input type="text" name="username">
+        <input type="text" name="username" >
+
+
+    </form>
+
+    <hr>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="q">
+        <input type="submit" value="Google Search">
+    </form>
+</body>
+</html>
