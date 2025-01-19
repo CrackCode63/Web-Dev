@@ -1,0 +1,68 @@
+<!-- What is CSS? -->
+<!-- CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media CSS saves a lot of work. It can control the layout of multiple web pages all at once External stylesheets are stored in CSS files
+CSS is a language that describes the style of an HTML document -->
+
+<!-- What is Selector? -->
+<!-- ===================================== -->
+<!-- A CSS selector is a pattern used to select the elements you want to apply styles to. It's composed of a series of characters that define the elements you want to style. -->
+
+<!-- What is Property? -->
+<!-- ===================================== -->
+<!-- A CSS property is a feature of the selected HTML element that can be changed using CSS. Properties are the actual values that you assign to a CSS selector. -->
+
+<!-- What is Value? -->
+<!-- ===================================== -->
+<!-- A CSS value is the value assigned to a property. For example, the color property can have the value red. -->
+
+<!-- Include CSS in HTML -->
+<!-- ===================================== -->
+<!-- There are three ways of inserting a style sheet:
+1. External CSS
+2. Internal CSS
+3. Inline CSS -->
+<!-- External CSS: Linking an external CSS file -->
+<!-- <link rel="stylesheet" type="text/css" href="mystyle.css"> -->
+
+<!-- Internal CSS: Using the <style> element in the <head> section -->
+    <!-- <style>
+        body {
+            background-color: linen;
+        }
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+    </style> -->
+
+<!-- Inline CSS: Using the style attribute in the HTML element -->
+    <!-- <h1 style="color:blue;text-align:center;">This is a heading</h1> -->
+    <!-- <p style="color:red;">This is a paragraph.</p> -->
+    <!-- <p style="color:blue;">This is a paragraph.</p> -->
+    <!-- <p style="font-size:50px;">This is a paragraph.</p> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Internal CSS: Using the <style> element in the <head> section -->
+    <style>
+        body {
+            background-color: linen;
+        }
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <h2 style="color: burlywood;">This is a heading
+    </h2>
+    <p style="color: blueviolet;">This is a paragraph.</p>
+</body>
+</html>
