@@ -1,0 +1,40 @@
+<!-- Inheritance in CSS? -->
+<!-- ==================== -->
+<!-- Inheritance in CSS is a mechanism that allows child elements to inherit properties from their parent elements. This means that if a property is set on a parent element, it will automatically be applied to all child elements unless explicitly overridden. Inheritance helps to reduce the amount of code needed to style elements and makes it easier to maintain and update styles. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Inheritance in CSS */
+        /* ==================== */
+        div{
+            color: red;
+            background-color: greenyellow;
+        }
+        ul{
+            color: blue;
+            /* Inheritance is not applied here because we are overriding the color property */
+            /*background-color: khaki; */
+        }
+        li{
+            background-color: inherit;
+            /* Inheritance is applied here because we are using the inherit keyword */
+            color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div>This is a div element.
+        <p>This is a paragraph element.
+            <ul>This is an unordered list.
+                <li>Hello</li>
+                <li>World</li>
+            </ul>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Checkbox with Label</title>
+    <style>
+        input[type="checkbox"] {
+            display: none; /* Hide the default checkbox */
+        }
+
+        .custom-checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #007BFF;
+            border-radius: 4px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .custom-checkbox.checked {
+            background-color: #007BFF;
+            border-color: #0056b3;
+        }
+
+        .custom-checkbox.checked::after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 6px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <label>
+        <input type="checkbox" onchange="toggleCheck(this)">
+        <span class="custom-checkbox"></span>
+        Custom Checkbox
+    </label>
+
+    <script>
+        function toggleCheck(input) {
+            const checkbox = input.nextElementSibling;
+            checkbox.classList.toggle('checked', input.checked);
+        }
+    </script>
+</body>
+</html>

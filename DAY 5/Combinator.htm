@@ -1,0 +1,51 @@
+<!-- Combinator in HTML is a CSS selector that selects and styles elements based on their relationship in the HTML document. Combinators are used to target specific elements or groups of elements based on their position relative to other elements. There are several types of combinators in CSS, including the descendant combinator, child combinator, adjacent sibling combinator, and general sibling combinator. Each combinator has a different syntax and behavior, allowing for precise targeting and styling of elements in a document. Combinators are a powerful tool in CSS that can be used to create complex and dynamic layouts and designs. -->
+
+<!-- Here are some examples of combinators in CSS: -->
+<!-- Descendant Combinator (space): -->
+
+<!-- The descendant combinator selects an element that is a descendant of another element. It is denoted by a space between the two selectors. For example, the following CSS rule selects all <li> elements that are descendants of a <ul> element: -->
+
+<!-- ul li {
+    color: red;
+} -->
+
+<!-- Child Combinator (>): -->
+
+<!-- The child combinator selects an element that is a direct child of another element. It is denoted by a greater-than sign between the two selectors. For example, the following CSS rule selects all <li> elements that are direct children of a <ul> element: -->
+
+<!-- ul > li {
+    color: blue;
+} -->
+
+<!-- Adjacent Sibling Combinator (+): -->
+
+<!-- The adjacent sibling combinator selects an element that is immediately preceded by another element. It is denoted by a plus sign between the two selectors. For example, the following CSS rule selects all <p> elements that are immediately preceded by an <h1> element: -->
+
+<!-- h1 + p {
+    font-weight: bold;
+} -->
+
+<!-- General Sibling Combinator (~): -->
+
+<!-- The general sibling combinator selects an element that is preceded by another element, regardless of the number of elements in between. It is denoted by a tilde sign between the two selectors. For example, the following CSS rule selects all <p> elements that are siblings of an <h1> element: -->
+
+<!-- h1 ~ p {
+    font-style: italic;
+} -->
+
+<!-- These are just a few examples of combinators in CSS. Combinators are a powerful tool that can be used to create complex and dynamic layouts and designs in CSS. By understanding how combinators work and how to use them effectively, you can take your CSS skills to the next level and create stunning and responsive web designs. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Combinator.css">
+</head>
+<body>
+    <div>
+        <p>Inside</p>
+    </div>
+    <p>Outside</p> 
+</body>
+</html>

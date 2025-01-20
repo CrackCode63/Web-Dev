@@ -1,0 +1,58 @@
+What is Pseudo element in CSS?
+<!-- Pseudo-elements are used to style specified parts of an element. For example, it can be used to: -->
+
+<!-- - Style the first letter of a paragraph  -->
+
+<!-- - Insert content before or after the content of an element -->
+
+<!-- - Style the first line of a paragraph
+Pseudo-elements are specified using double colons (::). -->
+
+<!-- for example: -->
+<!-- p::first-line {
+  color: red;
+  font-variant: small-caps;
+} -->
+  <!-- This will style the first line of the paragraph with red color and small-caps font variant. -->
+
+<!-- p::first-letter {
+  color: red;
+  font-size: 200%;
+} -->
+    <!-- This will style the first letter of the paragraph with red color and 200% font size. -->
+
+<!-- p::seletion{
+    color: red;
+} -->
+
+<!-- This will style the selected text of the paragraph with red color. -->
+
+<!-- What is the difference between pseudo-class and pseudo-element in CSS? -->
+
+<!-- Pseudo-class and pseudo-element are both used to style specific parts of an element, but they serve different purposes. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1::first-line{
+            color: red;
+            font-size: 200%;
+        }
+        .p1::first-letter{
+            color: blue;
+            font-size: 200%;
+        }
+        .p2::selection{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="p1">This is para1</p>
+    <p class="p2">This is para2</p>
+</body>
+</html>

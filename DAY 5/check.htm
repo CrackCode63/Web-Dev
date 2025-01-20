@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label Styled Checkbox</title>
+    <style>
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        label::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #007BFF;
+            border-radius: 4px;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="checkbox"]:checked + label::before {
+            background-color: #007BFF;
+            border-color: #0056b3;
+            position: relative;
+        }
+
+        input[type="checkbox"]:checked + label::before::after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 9px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox">Custom Checkbox</label>
+</body>
+</html>
