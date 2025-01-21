@@ -1,0 +1,50 @@
+Display Property in css
+
+<!-- The display property in CSS determines the type of rendering box used for an element. In HTML, the default display property value is taken from the HTML elements themselves. The display property can be used to change the default display value of an element. The display property can be used to set the following values: -->
+<!--
+* block: The element is displayed as a block-level element.
+
+* inline: The element is displayed as an inline-level element.
+
+* inline-block: The element is displayed as an inline-level block container.
+
+* none: The element is completely removed.
+
+* flex: The element is displayed as a block-level flex container.
+
+* grid: The element is displayed as a block-level grid container.
+
+* inline-flex: The element is displayed as an inline-level flex container.
+
+* inline-grid: The element is displayed as an inline-level grid container.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            display: inline;
+        }
+        span{
+            display: block;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            display: inline-block; /* Display property of the div */
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading Block Element</h1>
+    <span>Span Inline Element</span>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
