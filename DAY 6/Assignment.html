@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            height: 150px;
+            width: 300px;
+            font-size: 30px;
+            background-color: grey;
+            border: 5px dotted black;
+            margin-right: 1em;
+            margin-bottom: 40px;
+            margin-left: 2em;
+            padding: 1em;
+        }
+        .second{
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .list::before{
+            content: "❤️";
+            margin-right: 10px;
+        }
+        .list{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="second"></div>
+    <div class="second"></div>
+    <ul>
+        <li class="list">HTML</li>
+        <li class="list">CSS</li>
+        <li class="list">JavaScript</li>
+        <li class="list">Nodejs</li>
+        <li class="list">Reactjs</li>
+    </ul>
+</body>
+</html>
