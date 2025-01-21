@@ -1,0 +1,47 @@
+Relative Units
+<!-- Relative units are relative to another length property. They can be used to create scalable layouts for different screen sizes.
+css -->
+<!--
+1. em: Relative to the font-size of the element.
+2. rem: Relative to the font-size of the root element.
+3. vw: Relative to 1% of the width of the viewport.
+4. vh: Relative to 1% of the height of the viewport.
+5. %: Relative to the parent element.
+6. ch: Relative to the width of the "0" (zero).
+7. ex: Relative to the x-height of the current font.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Using relative units for font-size */
+        h1{
+            width: 50%;
+            border: 2px solid black;
+        }
+        #outer{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: hotpink;
+            font-size: 20px;
+        }
+        #inner{
+            height: 50%;
+            width: 50%;
+            border: 2px solid black;
+            background-color: lightblue;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <div id="outer">
+        <div id="inner"></div>
+    </div>
+</body>
+</html>
