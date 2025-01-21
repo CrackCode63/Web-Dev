@@ -1,0 +1,69 @@
+<!-- Padding Property -->
+<!-- The padding property in CSS defines the innermost portion of the box model, creating space around an element's content, inside of any defined margins and borders. -->
+<!-- The padding property can be used to set the padding for: -->
+<!-- 
+- all sides (top, right, bottom, left) at once clockwise
+- top and bottom at once (top, bottom)
+- right and left at once (right, left)
+- top, right, and bottom at once (top, right, bottom)
+- right, bottom, and left at once (right, bottom, left) 
+-->
+
+<!-- Margin Property -->
+<!-- The margin property in CSS defines the outermost portion of the box model, creating space around an element, outside of any defined borders. -->
+<!-- The margin property can be used to set the margin for: -->
+<!--
+- all sides (top, right, bottom, left) at once closewise
+- top and bottom at once (top, bottom)
+- right and left at once (right, left)
+- top, right, and bottom at once (top, right, bottom)
+- right, bottom, and left at once (right, bottom, left)
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px; /* Height of the div */
+            width: 100px; /* Width of the div */
+            border: 2px; /* Border of the div */
+            border-radius: 20px; /* Border radius of the div */
+            padding: 20px; /* Padding of the div */
+            margin: 5px; /* Margin of the div */
+            /* box-sizing: border-box;  Box sizing of the div */
+            box-shadow: 10px 10px 5px grey; /* Box shadow of the div */
+            border-width: 5px; /* Border width of the div */
+            border-style: groove; /* Border style of the div */
+            border-color: black; /* Border color of the div */
+            /* border short-hand property */
+            /* border: 5px groove black; */
+
+            /* margin short-hand property */
+            /* margin: 5px 10px 15px 20px; */
+
+            /* padding short-hand property */
+            /* padding: 5px 10px 15px 20px; */
+            /* top right bottom left */
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div>This is a div
+        Lorem ipsum dolor sit amet.
+    </div>
+</body>
+</html>
+
+<!-- What is Box-Sizing ? -->
+<!-- Box-sizing is a CSS property that allows you to control how an element's width and height are calculated -->
+<!-- It is used to include the padding and border in an element's total width and height -->
+<!-- If you set box-sizing: border-box; on an element, padding and border are included in the width and height -->
