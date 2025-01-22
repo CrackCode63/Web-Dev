@@ -1,0 +1,55 @@
+<!-- Transition in CSS  -->
+<!-- The transition property in CSS is used to change the property of an element smoothly. The transition property has four values. -->
+
+<!-- The four values of the transition property are: -->
+
+<!-- 1. transition-property: Specifies the name of the CSS property the transition effect is for. -->
+
+<!-- 2. transition-duration: Specifies how many seconds or milliseconds the transition effect takes to complete. -->
+
+<!-- 3. transition-timing-function: Specifies the speed curve of the transition effect. -->
+
+<!-- 4. transition-delay: Specifies when the transition effect will start. -->
+
+<!-- The transition property is a shorthand property for the four transition properties. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            transition-duration: 1s;
+            transition-delay: 1s;
+            display: none;
+        }
+        .first:hover{
+            background-color: brown;
+            border-radius: 50%;
+        }
+        .second{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 10px auto;
+            transition: margin-top 2s ease-in 0s;
+        }
+        .second:hover{
+            margin-top: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+
+    </div>
+    <div class="second">
+
+    </div>
+</body>
+</html>
