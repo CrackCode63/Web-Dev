@@ -1,0 +1,41 @@
+<!-- Setting background img using CSS  -->
+<!-- The background-image property in CSS is used to set the background image of an element. The background-image property has the following syntax: -->
+<!-- background-image: url('path'); -->
+
+<!-- The path value specifies the location of the image file. The path can be a URL, a relative path, or an absolute path. -->
+
+<!-- The background-image property can be used with other background properties such as background-color, background-repeat, background-position, and background-size. -->
+
+<!-- The background-image property can be used with the background shorthand property. The background shorthand property has the following syntax: -->
+
+<!-- background: color image repeat position size; -->
+
+<!-- The color value specifies the background color. The image value specifies the background image. The repeat value specifies how the background image should be repeated. The position value specifies the position of the background image. The size value specifies the size of the background image. -->
+
+<!-- The background shorthand property can be used with the background-color, background-image, background-repeat, background-position, and background-size properties. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 300px;
+            width: 900px;
+            background-image: url('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'); 
+            background-size: cover;
+            /* cover means: The background image is stretched to cover the entire element. */
+            /* contain means: The background image is scaled to fit the entire element, even if it means leaving some empty space. */
+            /* auto means: The background image is displayed in its original size. */
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
