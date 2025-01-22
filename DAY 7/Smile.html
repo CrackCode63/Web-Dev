@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 200px;
+            width: 200px;
+          
+        }
+        .circle{
+            height: inherit;
+            width: inherit;
+            border-radius: 50%;
+            border: 2px solid rgb(255, 230, 0);
+            background-color: rgb(255, 230, 0);
+        }
+        .mini_circle{
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: black;
+            position: relative;
+        }
+        ._1{
+            left: 50px;
+            top: 50px;
+        }
+        ._2{
+            left: 130px;
+            top: 30px;
+        }
+        .face{
+            height:40px ;
+            width: 80px;
+            background-color: rgb(117, 38, 28);
+            border-bottom-right-radius: 400%;
+            border-bottom-left-radius: 400%;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            position: relative;
+            top: 75px;
+            left: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="circle">
+            <div class="mini_circle _1"></div>
+            <div class="mini_circle _2"></div>
+            <div class="face"></div>
+        </div>
+    </div>
+</body>
+</html>
