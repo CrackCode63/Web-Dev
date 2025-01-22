@@ -1,0 +1,94 @@
+<!-- position in CSS is used to specify the position of an element.  -->
+
+<!-- The position property has the following values: -->
+
+<!-- 1. static: The element is positioned according to the normal flow of the document. -->
+
+<!-- 2. relative: The element is positioned relative to its normal position. -->
+
+<!-- 3. absolute: The element is positioned relative to its nearest positioned ancestor. -->
+
+<!-- 4. fixed: The element is positioned relative to the viewport. -->
+
+<!-- 5. sticky: The element is positioned based on the user's scroll position. -->
+
+<!-- The position property is a shorthand property for the position values. The position property has the following syntax: -->
+
+<!-- position: static|relative|absolute|fixed|sticky; -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            display: inline-block;
+            background-color: chocolate;
+        }
+        #static{
+            background-color: chartreuse;
+            position: static;
+            left: 100px; /* position static prevent it */
+            top: 100px; /* position static prevent it */
+        }
+        #relative{
+            position: relative;
+            background-color: crimson;
+            top: 100px;
+            left: 100px;
+        }
+        #fixed{
+            position: fixed;
+            top: 100px;
+            left: 100px;
+            background-color: darkorange;
+        }
+        #Absolute{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            background-color: darkorchid;
+        }
+    </style>
+</head>
+<body>
+    <section class="static">
+        <h2>Static Position</h2>
+        <div></div>
+        <div id="static"></div>
+        <div></div>
+    </section>
+    <section class="relative">
+        <h2>Relative Position</h2>
+        <div></div>
+        <div id="relative"></div>
+        <div></div>
+    </section>
+    <section class="fixed">
+        <h2>Fixed Position</h2>
+        <div></div>
+        <div id="fixed"></div>
+        <div></div>
+    </section>
+    <section class="Absolute">
+        <h2>Absolute Position</h2>
+        <div></div>
+        <div id="Absolute"></div>
+        <div></div>
+    </section>
+    <!-- What is the Difference between fixed and absolute position? -->
+    <!-- The difference between fixed and absolute position is that the fixed position is relative to the viewport, whereas the absolute position is relative to the nearest positioned ancestor. -->
+
+    <!-- What is the difference between sticky and fixed position? -->
+     
+
+
+
+
+</body>
+</html>
