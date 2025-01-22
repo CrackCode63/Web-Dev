@@ -1,0 +1,37 @@
+<!-- Alpha and Opacity in CSS -->
+<!-- ========================= -->
+<!-- The opacity property in CSS specifies how transparent the color of an element is. The value is a number between 0.0 (fully transparent) and 1.0 (fully opaque). -->
+<!-- The alpha property in CSS is used to specify the transparency of an element. The value is a number between 0.0 (fully transparent) and 1.0 (fully opaque). --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            height: 100px;
+            width: 100px;
+            background-color: rgba(0, 255, 255, 0.5);
+            border: 1px solid black;
+        }
+        .second{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(0, 255, 255);
+            opacity: 0.5;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="first">
+        <h1>heading</h1>
+    </div>
+    <div class="second">
+        <h1>heading</h1>
+    </div>
+</body>
+</html>
