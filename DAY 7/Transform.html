@@ -1,0 +1,93 @@
+<!-- What is Transform in CSS? -->
+<!-- The transform property in CSS is used to change the appearance of an element. The transform property has several values.  -->
+
+<!-- The values of the transform property are: -->
+
+<!-- 
+1. translate(): The translate() function is used to move an element from its current position. The translate() function has two values: translate(x, y). The x value moves the element horizontally, and the y value moves the element vertically. -->
+
+<!-- 
+2. scale(): The scale() function is used to increase or decrease the size of an element. The scale() function has two values: scale(x, y). The x value increases or decreases the width of the element, and the y value increases or decreases the height of the element. -->
+
+<!-- 
+3. rotate(): The rotate() function is used to rotate an element. The rotate() function has one value: rotate(angle). The angle value specifies the number of degrees the element should be rotated. -->
+
+<!-- 
+4. skew(): The skew() function is used to skew an element. The skew() function has two values: skew(x-angle, y-angle). The x-angle value specifies the number of degrees the element should be skewed horizontally, and the y-angle value specifies the number of degrees the element should be skewed vertically. -->
+
+<!-- 
+5. matrix(): The matrix() function is used to combine all the transform functions into one. The matrix() function has six values: matrix(a, b, c, d, e, f). The a and d values specify the scaling factors, the b and c values specify the skewing factors, and the e and f values specify the translation factors. -->
+
+<!-- 
+6. perspective(): The perspective() function is used to add a 3D perspective to an element. The perspective() function has one value: perspective(n). The n value specifies the depth of the perspective view. -->
+
+<!-- The transform property is a shorthand property for the transform functions. The transform property has the following syntax: -->
+
+<!-- transform: translate(x, y) scale(x, y) rotate(angle) skew(x-angle, y-angle) matrix(a, b, c, d, e, f) perspective(n); -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+        }
+        div:nth-of-type(2n){
+            background-color: blueviolet;
+        }
+        div:nth-of-type(2n+1){
+            background-color: brown;
+        }
+       /* .first{
+            transform: rotate(45deg);
+        } */
+        .anim{
+            transition: transform 1s;
+        }
+        .anim:hover{
+            transform: scale(1.5, 1.5);
+        }
+        .sixth{
+            height: 100px;
+            width: 100px;
+            background-color: cadetblue;
+            margin: 10px;
+            transition: transform 1s;
+        }
+        .sixth:hover{
+            transform:scale(0.5, 3) ;
+            /* scalex(): for x-axis */
+            /* scaley(): for y-axis */
+        }
+        .third{
+            transform: translate(100px);
+            /* translateX(): for x-axis */
+            /* translateY(): for y-axis */
+            /* translateZ(): for z-axis */
+            /* translate3d(): for 3d */
+        }
+        .fouth{
+            transform: skew(30deg, 20deg);
+            /* skewX(): for x-axis */
+            /* skewY(): for y-axis */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first anim"></div>
+        <div class="second anim"></div>
+        <div class="third"></div>
+        <div class="fouth"></div>
+        <div class="fifth anim"></div>
+        <div class="sixth"></div>
+    </div>
+</body>
+</html>
