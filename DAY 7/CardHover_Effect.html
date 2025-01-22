@@ -1,0 +1,50 @@
+<!-- Making Card Hover Effect with HTML and CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            display: inline-block;
+            box-shadow: 2px 2px 2px 2px grey;
+            transition: transform 1s;
+        }
+        .card:hover {
+            transform: scale(1.1, 1.1);
+            box-shadow: 10px 10px 5px 5px grey;
+
+        }
+        img {
+            height: 50%;
+            width: 100%;
+            border-radius: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="card first">
+        
+        <img class="img1" src="man.jpg" alt="">
+        <h3 style="text-align: center;">Aman</h3>
+        <p style="text-align: center;">Software</p>
+        
+    </div>
+    <div class="card second">
+        
+        <img src="woman.jpg" alt="">
+        <h3 style="text-align: center;">Shivani</h3>
+        <p style="text-align: center;">Hardware</p>
+        
+    </div>
+</body>
+</html>
