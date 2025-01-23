@@ -1,0 +1,156 @@
+<!-- What is Flex-Box in CSS? -->
+<!-- Flexbox is a layout mode in CSS that allows you to create flexible and responsive layouts. It was
+introduced in CSS3 and has become a widely used and powerful tool for web developers. -->
+
+<!-- The main features of Flexbox include: -->
+
+<!-- * Flex containers: These are the elements that contain the flexible items. They can be either block-level elements or inline elements. -->
+
+<!-- * Flex items: These are the elements that are contained within the flex container. They can be either block-level elements or inline elements. -->
+
+<!-- * Flex direction: This determines the direction in which the flex items are laid out. It can be either row or column. -->
+
+<!-- * Flex wrap: This determines whether the flex items should wrap to a new line when there is not
+enough space to display them all on one line. -->
+
+<!-- What is the main difference between Flexbox and Grid? -->
+<!-- The main difference between Flexbox and Grid is that Flexbox is used for one-dimensional layouts, while Grid is used for two-dimensional layouts. Flexbox is used to lay out items in a single row or column, while Grid is used to create a grid of items that can be laid out in multiple rows and columns. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        #container {
+            display: flex;
+            height: 500px;
+            width: 80%;
+            margin: 40px auto;
+            background-color: #f0f0f0;
+            border: 2px solid black;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+        #container div{
+            width: 150px;
+            height: 30px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1> Flexbox Playgorund  </h1>
+    <div id="container">
+        <div style="background-color:red;"></div>
+        <div style="background-color:orange;"></div>
+        <div style="background-color:yellow;"></div>
+        <div style="background-color:green;"></div>
+        <div style="background-color:rgb(48, 48, 129);"></div>
+        <div style ="background-color: rgb(48,129,48);"></div>
+        <!-- Flex-direction in CSS -->
+         <!-- 1. Row : flex-direction: row;
+         2. Column : flex-direction: column;
+         3. Row-Reverse : flex-direction: row-reverse;
+         4. Column-Reverse : flex-direction: column-reverse; -->
+
+        <!-- Justify-content in CSS -->
+
+         <!-- 1. Justify-content: center; 
+         This means that the items will be centered in the container. -->
+
+         <!-- 2. Justify-content: space-between;
+         This means that the items will be evenly spaced in the container. -->
+
+         <!-- 3. Justify-content: space-around;
+         This means that the items will be evenly spaced in the container, with equal space on either side -->
+
+         <!-- 4. Justify-content: space-evenly;
+         This means that the items will be evenly spaced in the container, with equal space on either side -->
+
+         <!-- 5. Justify-content: flex-start;
+         This means that the items will be aligned to the start of the container. -->
+
+         <!-- 6. Justify-content: flex-end;
+         This means that the items will be aligned to the end of the container. -->
+
+        <!-- Flex-Wrap in CSS -->
+
+         <!-- 1. Flex-wrap: wrap;
+          This means that the items will wrap to the next line when the container is not large enough to hold all the items.
+
+          2. Flex-wrap: nowrap;
+          This means that the items will not wrap to the next line when the container is not large enough to hold all the items.
+          
+          3. Flex-wrap: wrap-reverse;
+          This means that the items will wrap to the next line in reverse order when the container is not large enough to
+          hold all the items.-->
+
+        <!-- Align-Items in CSS -->
+         <!-- 1. Align-items: center;
+          This means that the items will be centered vertically in the container.
+          2. Align-items: flex-start;
+          This means that the items will be aligned to the top of the container.
+          3. Align-items: flex-end;
+          This means that the items will be aligned to the bottom of the container.
+          4. Align-items: baseline;
+          This means that the items will be aligned to the baseline of the container.
+          5. Align-items: stretch;
+          This means that the items will be stretched to fill the container.
+            -->
+
+        <!-- Align-Content in CSS -->
+         <!-- 1. Align-content: center;
+          This means that the items will be centered horizontally in the container.
+
+          2. Align-content: space-between;
+          This means that the items will be evenly spaced horizontally in the container.
+
+          3. Align-content: space-around;
+          This means that the items will be evenly spaced horizontally in the container, with equal space on either side.
+
+          4. Align-content: space-evenly;
+          This means that the items will be evenly spaced horizontally in the container, with equal space on either side.
+          
+          5. Align-content: flex-start;
+          This means that the items will be aligned to the start of the container.
+
+          NOTE: align-self : for individual item alignment.
+
+            -->
+
+        <!-- Flex Sizing in CSS -->
+         <!-- 1. Flex-basis: 100px;
+          This means that the item will take up 100px of space in the container.
+            2. Flex-grow: 1;
+            This means that the item will grow to fill any extra space in the container.
+            3. Flex-shrink: 1;
+            This means that the item will shrink to fit in the container if it is too large.
+    -->
+          
+
+        <!-- Flex Shorthand -->
+         <!-- 1. Flex: 1 1 100px;
+          This means that the item will grow to fill any extra space in
+          the container, shrink to fit in the container if it is too large, and take up 100px of space in the container.
+
+          2. Flex: 0 1 100px;
+          This means that the item will not grow to fill any extra space in the container, shrink to fit in the container if it is too large, and take up 100px of space in the container.
+
+          3. Flex: 1 0 100px;
+          This means that the item will grow to fill any extra space in the container, will not shrink to fit in the container if it is too large, and take up 100px of space in the container.
+          
+          4. Flex: 0 0 100px;
+          This means that the item will not grow to fill any extra space in the container, will not shrink to fit in the container if it is too large, and take up 100px of space in the container.
+    -->
+
+
+
+
+    </div>
+</body>
+</html>
